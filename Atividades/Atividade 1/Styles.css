@@ -1,0 +1,119 @@
+body {
+    font-family: "Tahoma";
+    text-align: center;
+}
+main {
+    background-color: maroon;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+}
+aside {
+    background-image: url('Capas/vinho.jpg');
+    background-size: cover;
+    width: 30%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    text-align: left;
+}
+
+h1 {
+    color: whitesmoke;
+    font-style: italic;
+    text-transform: uppercase;
+    border: 2px dotted mistyrose;
+}
+h4 {
+    color: whitesmoke;
+}
+h4.main {
+    position: relative;
+    color: whitesmoke;
+    z-index: 1;
+}
+h4.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    background-image: url(Capas/fundo.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+
+h3.aside{
+    background-image: url(Capas/fundo.jpg);
+    color: maroon;
+    text-align: center;
+}
+h4.aside {
+    color: whitesmoke;
+    text-align: left;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    margin: 3px;
+}
+aside img {
+    vertical-align: middle;
+    width: 20px;
+    margin-right: 15px;
+}
+
+ul {
+    list-style-image: url(Capas/check.png);
+    color: lightgray;
+    font-size: 10pt;
+    font-weight: bold;
+    line-height: 35px;
+    text-align: left;
+}
+
+h1:hover {
+    background-color: crimson;
+    color: lightpink;
+    border-color: lightpink;
+}
+h4:hover {
+    background-color: crimson;
+}
+aside img:hover {
+    transform: rotate(-5deg);
+    border: 5px double gold;
+}
+span {
+    text-decoration: underline;
+    color: gold;
+    margin-right: 5px;
+}
+table {
+    margin: 20px;
+    border-collapse: collapse;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+td {
+    border: 3px dashed indianred;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+table img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
